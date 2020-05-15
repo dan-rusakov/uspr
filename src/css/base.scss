@@ -1,0 +1,43 @@
+::selection {
+  background: rgba($black, .7);
+  color: $white;
+}
+
+::placeholder {
+  color: #666;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #eaeaea;
+  font-family: $open-sans;
+  font-size: 16px;
+  font-weight: $regular;
+  line-height: $font-line-height-base;
+  color: #212121;
+  position: relative;
+}
+
+input, textarea {
+  border: #666 1px solid;
+  outline: none;
+  &:focus:required:invalid {
+    border-color: red;
+  }
+
+  &:required:valid {
+    border-color: green;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}

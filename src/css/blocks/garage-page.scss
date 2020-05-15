@@ -1,0 +1,47 @@
+.section-4el .aprt-box .top-line ul li {
+  &:last-child {
+    padding: 4px 20px 15px 17px;
+  }
+
+  &:first-child {
+    width: 90px;
+  }
+
+  &:nth-child(2) {
+    width: 106px;
+  }
+
+  &:nth-child(3) {
+    width: 125px;
+  }
+
+  &:nth-child(4) {
+    width: inherit;
+  }
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+
+  &.img-width {
+    width: 100%;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.position-div {
+  text-align: left;
+}
+
+b, strong {
+  font-weight: bold;
+}

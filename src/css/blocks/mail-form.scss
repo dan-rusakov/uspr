@@ -1,0 +1,29 @@
+.mail-form {
+  input, textarea {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: $gray;
+    margin-bottom: 15px;
+    padding: 5px 10px;
+    border-radius: 3px;
+  }
+
+  button {
+    display: inline-block;
+    background-color: $red;
+    border-radius: 3px;
+    color: #ffffff;
+    font-size: em(19px);
+    padding: 7px 52px;
+    box-shadow: 0 3px 0 0 lighten($red, 10%);
+    position: relative;
+    border: none;
+
+    &:hover {
+      text-decoration: none;
+      box-shadow: none;
+      top: 3px;
+    }
+  }
+}

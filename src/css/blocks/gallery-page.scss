@@ -1,0 +1,63 @@
+.gal-box {
+  background-color: $gray;
+  border-radius: 3px;
+  padding: 25px;
+  margin-bottom: 30px;
+
+  p {
+    color: $dark;
+    font-size: em(44px);
+    font-family: $roboto-slab;
+    line-height: 1;
+    text-align: center;
+
+    &:nth-child(2) {
+      margin-bottom: 0;
+
+      &::after {
+        content: "";
+        width: 85%;
+        height: 3px;
+        background-color: $red;
+        display: inline-block;
+        text-align: center;
+        position: relative;
+        top: -10px;
+      }
+    }
+  }
+
+  img {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+.fancybox-button--thumbs {
+  display: none !important;
+}
+
+.desc-p {
+  background-color: $smoke;
+  border-radius: 3px;
+  padding: 15px 20px 1px;
+  margin: 0 0 1em;
+  width: 100%;
+  display: inline-block;
+}
+
+.desc-img img {
+  width: 100%;
+}
+
+.desc-cards {
+  column-count: 3;
+  column-gap: 1em;
+}
+
+.desc-gallery {
+  background-color: $gray;
+  padding: 20px 20px 0;
+  margin-bottom: 1em;
+  border-radius: 3px
+}

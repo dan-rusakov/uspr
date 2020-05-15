@@ -1,0 +1,35 @@
+$path-img: '../../img/';
+$path-fonts: '../../fonts/';
+
+$open-sans: 'OpenSans', Arial, sans-serif;
+$roboto-slab: 'RobotoSlab', Arial, serif;
+
+$font-line-height-base: 1.65;
+
+$thin: 100;
+$extralight: 200;
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+$extra-bold: 800;
+$black-weight: 900;
+
+$site-width: 1200px;
+$site-gutter: 15px;
+
+$white: #fff;
+$black: #000;
+$red: #ef6461;
+$blue: #135699;
+$gray: #f5f5f5;
+$smoke: #edf7f6;
+$dark: #515364;
+
+$grid-gutter-width: 30px;
+$grid-columns: 12;
+$grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1380px);
+$container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1320px);
+
+$gutter: $grid-gutter-width;

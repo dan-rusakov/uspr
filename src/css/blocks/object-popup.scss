@@ -1,0 +1,60 @@
+.obj-box {
+  text-align: center;
+
+  p {
+    font-family: $roboto-slab;
+    font-weight: $bold;
+    font-size: em(26px);
+    color: $dark;
+    text-align: center;
+  }
+
+  .material-icons {
+    font-size: em(28px);
+    width: 30px;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    height: 100%;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 3px;
+      height: 100%;
+      background-color: #fff;
+      position: absolute;
+      top: 0;
+      right: 38px;
+    }
+  }
+
+  a {
+    font-family: $open-sans;
+    font-weight: $bold;
+    display: block;
+    background-color: $smoke;
+    border-radius: 3px;
+    margin: 0 10px 20px;
+    color: $dark;
+    font-size: em(16px);
+    padding: 11px 70px 11px 20px;
+    text-align: left;
+    position: relative;
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    &:first-child {
+      margin: 20px 10px;
+    }
+  }
+}
+
+.obj-box__arrow {
+  position: relative;
+  top: 7px;
+  left: 2px;
+  fill: $dark;
+}

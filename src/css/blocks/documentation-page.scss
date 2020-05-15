@@ -1,0 +1,71 @@
+.doc-box {
+  margin-bottom: 10px;
+
+  .top-line {
+    position: relative;
+    background-color: $smoke;
+    border-radius: 3px;
+    padding: 0 15px 2px;
+    line-height: 1.7;
+    height: max-content;
+    max-height: 48px;
+    overflow: hidden;
+    transition: all 0.5s ease;
+
+    a {
+      display: inline-block;
+      background-color: $smoke;
+      border-radius: 3px;
+      color: #212121;
+      font-size: em(18px);
+      padding: 10px 40px 8px 0;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    &.full-text {
+      max-height: 270px !important;
+    }
+
+    .material-icons {
+      position: absolute;
+      width: 40px;
+      top: 5px;
+      right: 10px;
+      font-size: em(40px);
+      fill: $dark;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .bottom-line {
+    background-color: $smoke;
+    border-top: 3px solid #ffffff;
+    border-radius: 3px;
+    padding: 12px;
+    display: none;
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        padding-right: 14px;
+      }
+    }
+
+    .doc-stat li {
+      padding: 0 0 0 14px;
+    }
+
+    .doc-time li {
+      padding: 0 7px;
+    }
+  }
+}

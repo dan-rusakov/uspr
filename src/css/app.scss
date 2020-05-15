@@ -1,0 +1,32 @@
+@import "fonts";
+@import "reset";
+@import "variables";
+@import "mixins";
+@import "base";
+@import "animations";
+
+@import "../libs/bootstrap/bootstrap-grid";
+@import "../libs/bootstrap/bootstrap-reboot";
+
+@import "blocks/general";
+@import "blocks/stock";
+@import "blocks/callback";
+@import "blocks/quiz";
+@import "blocks/header";
+@import "blocks/mail-form";
+@import "blocks/about-section";
+@import "blocks/objects-section";
+@import "blocks/contacts-section";
+@import "blocks/footer";
+@import "blocks/object-popup";
+@import "blocks/appartments-page";
+@import "blocks/documentation-page";
+@import "blocks/gallery-page";
+@import "blocks/error-page";
+@import "blocks/garage-page";
+
+@import "media";
+
+@import "../libs/owlcarousel/owl.carousel.min";
+@import "../libs/owlcarousel/owl.theme.default.min";
+@import "../libs/fancybox/jquery.fancybox.min";

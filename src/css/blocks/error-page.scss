@@ -1,0 +1,16 @@
+.page404 {
+  h1 {
+    font-size: em(200px);
+    color: $blue;
+    line-height: 1;
+    font-family: $roboto-slab;
+    font-weight: $bold;
+    margin-top: 90px;
+  }
+
+  p {
+    font-size: em(32px);
+    color: $dark;
+    margin-bottom: 160px;
+  }
+}

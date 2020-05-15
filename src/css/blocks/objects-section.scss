@@ -1,0 +1,90 @@
+.obj .content {
+  background-color: $gray;
+
+  .obj-card {
+    background-color: #fff;
+    border-radius: 3px;
+    padding: 22px 0;
+    margin-bottom: 30px;
+
+    h3 {
+      font-size: em(24px);
+      font-family: $roboto-slab;
+      color: $dark;
+      border-right: 3px solid $blue;
+      padding: 15px 0;
+      margin: 20px 0 0;
+    }
+
+    .arr-area {
+      padding: 0 40px;
+
+      .owl-carousel {
+        padding-right: 30px;
+
+        .obj-button {
+          border: none;
+          border-radius: 3px;
+          background-position: center center;
+          position: relative;
+          background-repeat: no-repeat;
+          background-size: cover;
+          max-width: 204.05px;
+          height: 146.66px;
+          font-size: em(22px);
+          font-family: $roboto-slab;
+          font-weight: 700;
+          letter-spacing: 1px;
+          color: #ffffff;
+          padding: 0 6px;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+
+      .owl-dots {
+        display: none;
+      }
+    }
+  }
+}
+
+.owl-nav {
+  span {
+    color: $dark;
+    font-size: em(60px);
+    font-weight: 100;
+    font-family: $open-sans;
+    transition: .25s color ease;
+  }
+
+  .owl-prev {
+    position: absolute;
+    top: 20px;
+    left: -35px;
+
+    &:hover, &:focus {
+      outline: none;
+
+      span {
+        color: lighten($dark, 25%);
+      }
+    }
+  }
+
+  .owl-next {
+    position: absolute;
+    top: 20px;
+    right: 0;
+
+    &:hover, &:focus {
+      outline: none;
+
+      span {
+        color: lighten($dark, 25%);
+      }
+    }
+  }
+}

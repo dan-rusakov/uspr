@@ -1,0 +1,27 @@
+.arr-rotate {
+  animation: eye 0.5s 1 forwards;
+}
+
+@keyframes eye {
+  from {
+    transform: rotateZ(0deg);
+  }
+
+  to {
+    transform: rotateZ(180deg);
+  }
+}
+
+.arr-unrotate {
+  animation: eye1 0.5s 1;
+}
+
+@keyframes eye1 {
+  from {
+    transform: rotateZ(180deg);
+  }
+
+  to {
+    transform: rotateZ(0deg);
+  }
+}
