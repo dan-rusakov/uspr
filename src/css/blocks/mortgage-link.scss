@@ -1,0 +1,62 @@
+.mortgage-link {
+  width: 290px;
+  max-width: 100%;
+  position: fixed;
+  right: 40px;
+  bottom: 30px;
+  background-color: $white;
+  border: 2px solid $red;
+  border-radius: 8px;
+  padding: 10px 45px 10px 15px;
+  font-family: $roboto-slab;
+  font-size: 14px;
+  text-align: left;
+  color: $red;
+  margin: 0;
+  font-weight: $bold;
+  outline: none;
+  text-decoration: none;
+  transition: .25s color ease, .25s background-color ease;
+  z-index: 1;
+  display: none;
+
+  &:hover, &:focus {
+    outline: none;
+    background-color: $red;
+    color: $white;
+    text-decoration: none;
+
+    .mortgage-link__close-icon {
+      stroke: $white;
+    }
+  }
+
+  &--active {
+    display: block;
+  }
+}
+
+.mortgage-link__close {
+  display: block;
+  position: absolute;
+  top: 6px;
+  right: 7px;
+  cursor: pointer;
+  outline: none;
+
+  &:hover, &:focus {
+    outline: none;
+  }
+
+  &:hover .mortgage-link__close-icon,
+  &:focus .mortgage-link__close-icon {
+    opacity: 0.45;
+  }
+}
+
+.mortgage-link__close-icon {
+  stroke: $dark;
+  transition: .25s opacity ease;
+
+
+}

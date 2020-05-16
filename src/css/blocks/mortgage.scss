@@ -1,0 +1,78 @@
+.mortgage__text-box {
+  max-width: 100%;
+  width: 850px;
+
+  h2 {
+    font-family: $roboto-slab;
+    font-size: 28px;
+    font-weight: $regular;
+    color: $dark;
+    margin: 0 0 25px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  h3 {
+    font-family: $roboto-slab;
+    font-size: 22px;
+    font-weight: $regular;
+    color: $dark;
+    margin: 0 0 25px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  p {
+    font-family: $open-sans;
+    font-weight: $regular;
+    font-size: 16px;
+    color: $dark;
+    margin: 0 0 25px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  li {
+    font-family: $open-sans;
+    font-weight: $regular;
+    font-size: 16px;
+    color: $dark;
+    margin: 0 0 8px;
+    list-style-position: inside;
+    display: list-item;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  ul {
+    margin-bottom: 25px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    li {
+      list-style-type: disc;
+    }
+  }
+
+  ol {
+    margin-bottom: 25px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    li {
+      list-style-type: decimal;
+    }
+  }
+}

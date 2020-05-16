@@ -1,9 +1,13 @@
 if (document.querySelector('.callback')){
-  var callback = document.querySelector('.callback');
 
-  setTimeout(function(){
-    callback.style.display = 'block';
-  }, 12000);
+  let callbackCounter = +sessionStorage.getItem('callbackPopup');
+  const callback = document.querySelector('.callback');
+
+  if (callbackCounter < 2) {
+    setTimeout(function(){
+      callback.classList.add('callback--active');
+    }, 12000);
+  }
 
   callback.addEventListener('submit', function(evt){
     evt.preventDefault();
@@ -20,6 +24,14 @@ if (document.querySelector('.callback')){
   });
 
   document.querySelector('.callback__close').addEventListener('click', function(){
-    callback.style.display = 'none';
+    callback.classList.remove('callback--active');
+
+    if (callbackCounter) {
+      callbackCounter += 1;
+    } else {
+      callbackCounter = 1;
+    }
+
+    sessionStorage.setItem('callbackPopup', callbackCounter);
   });
 }
