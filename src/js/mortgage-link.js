@@ -8,7 +8,8 @@ if (document.querySelector('.mortgage-link')) {
     mortgageLink.classList.add('mortgage-link--active');
   }
 
-  mortgageBtn.addEventListener('click', () => {
+  mortgageBtn.addEventListener('click', (evt) => {
+    evt.preventDefault();
     mortgageLink.classList.remove('mortgage-link--active');
 
     if (mortgageLinkCounter) {
