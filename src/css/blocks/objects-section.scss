@@ -51,6 +51,21 @@
   }
 }
 
+.obj-button__sticker {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: $red;
+  color: $white;
+  font-family: $open-sans;
+  font-weight: $regular;
+  font-size: 12px;
+  margin: 0;
+  padding: 4px 11px;
+  border-radius: 0 0 0 4px;
+}
+
 .owl-nav {
   span {
     color: $dark;

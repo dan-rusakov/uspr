@@ -146,3 +146,128 @@
 .raduzhnyj4-kv .aprt-box .top-line ul li:last-child {
   border-right: none;
 }
+
+.main-filter__results {
+  width: 100%;
+}
+
+.apartments-page__grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+  width: 100%;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: $white;
+    pointer-events: none;
+  }
+}
+
+.apartments-page__apartment {
+  display: block;
+  background-color: $white;
+  padding: 25px 20px 20px;
+  width: calc(100% / 4);
+  border-bottom: 1px solid #DEDEDE;
+  border-right: 1px solid #DEDEDE;
+  text-decoration: none;
+  outline: none;
+
+  &:hover, &:focus {
+    text-decoration: none;
+    outline: none;
+  }
+
+  &:hover .apartments-page__apartment-price,
+  &:focus .apartments-page__apartment-price {
+    color: $red;
+  }
+
+  &:hover .apartments-page__apartment-name,
+  &:focus .apartments-page__apartment-name {
+    color: $red;
+  }
+
+  &--disabled > * {
+    opacity: 0.3;
+  }
+
+  &:nth-child(4n) {
+    border-right: none;
+  }
+}
+
+.apartments-page__apartment-img-box {
+  width: 100%;
+  height: 164px;
+  margin-bottom: 25px;
+  display: block;
+}
+
+.apartments-page__apartment-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.apartments-page__apartment-name {
+  font-family: $open-sans;
+  font-weight: $semibold;
+  color: $dark;
+  margin: 0 0 5px;
+  font-size: 16px;
+  transition: .25s color ease;
+}
+
+.apartments-page__apartment-floor {
+  font-family: $open-sans;
+  font-weight: $regular;
+  color: #A9A9A9;
+  margin: 0 0 5px;
+  font-size: 16px;
+}
+
+.apartments-page__apartment-number {
+  font-family: $open-sans;
+  font-weight: $regular;
+  color: #A9A9A9;
+  margin: 0 0 15px;
+  font-size: 16px;
+}
+
+.apartments-page__apartment-price {
+  font-family: $open-sans;
+  font-weight: $semibold;
+  color: $dark;
+  margin: 0;
+  font-size: 20px;
+  transition: .25s color ease;
+}
+
+.apartments-page__apartment-mark {
+  display: block;
+  padding: 6px 15px;
+  border-radius: 4px;
+  background-color: $white;
+  font-family: $open-sans;
+  font-weight: $semibold;
+  color: $dark;
+  margin: 0;
+  font-size: 12px;
+  position: absolute;
+  top: 25px;
+  left: 20px;
+  z-index: 1;
+
+  &--yellow {
+    background-color: #FFF4CB;
+  }
+}
