@@ -8,6 +8,15 @@
 }
 
 @font-face {
+  font-family: 'OpenSans';
+  src: url("../fonts/OpenSans-SemiBold.woff2") format('woff2'),
+  url("../fonts/OpenSans-SemiBold.woff") format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: 'RobotoSlab';
   src: url("../fonts/RobotoSlab-Regular.woff2") format('woff2'),
   url("../fonts/RobotoSlab-Regular.woff") format('woff');

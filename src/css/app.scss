@@ -7,6 +7,9 @@
 
 @import "../libs/bootstrap/bootstrap-grid";
 @import "../libs/bootstrap/bootstrap-reboot";
+@import "../libs/owlcarousel/owl.carousel.min";
+@import "../libs/owlcarousel/owl.theme.default.min";
+@import "../libs/fancybox/jquery.fancybox.min";
 
 @import "blocks/general";
 @import "blocks/stock";
@@ -27,9 +30,6 @@
 @import "blocks/mortgage";
 @import "blocks/mortgage-link";
 @import "blocks/main-filter";
+@import "blocks/apartment-page";
 
 @import "media";
-
-@import "../libs/owlcarousel/owl.carousel.min";
-@import "../libs/owlcarousel/owl.theme.default.min";
-@import "../libs/fancybox/jquery.fancybox.min";

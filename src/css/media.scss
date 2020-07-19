@@ -23,6 +23,35 @@
     height: 525px;
     overflow-y: scroll;
   }
+
+  .main-filter {
+    grid-template-columns: repeat(4, max-content);
+  }
+
+  .apartment-page__calculator-range-box {
+    width: calc(100% - 190px);
+  }
+
+  .apartment-page__checkbox-label {
+    width: 50%;
+  }
+
+  .apartment-page__bank-card {
+    height: 110px;
+  }
+
+  .apartment-page__description-text {
+    font-size: 14px;
+  }
+
+  .apartment-page__description-left-box {
+    width: calc(50% - 50px);
+    margin-right: 50px;
+  }
+
+  .apartment-page__gallery-item {
+    height: 280px;
+  }
 }
 
 // ≥992px
@@ -91,6 +120,119 @@
 
   .desc-cards {
     column-count: 2;
+  }
+
+  .main-filter {
+    grid-template-columns: repeat(3, max-content);
+  }
+
+  .apartments-page__apartment {
+    width: calc(100% / 3);
+
+    &:nth-child(4n) {
+      border-right: 1px solid #DEDEDE;
+    }
+
+    &:nth-child(3n) {
+      border-right: none;
+    }
+  }
+
+  .apartment-page__gallery-box {
+    width: calc(50% - 15px);
+    margin-right: 30px;
+  }
+
+  .apartment-page__spec-box {
+    width: calc(50% - 15px);
+    margin-left: 0;
+  }
+
+  .apartment-page__spec {
+    font-size: 14px;
+  }
+
+  .apartment-page__spec-value {
+    font-size: 16px;
+  }
+
+  .apartment-page__main-specs {
+    margin-bottom: 30px;
+  }
+
+  .apartment-page__price-box {
+    padding-bottom: 17px;
+    margin-bottom: 20px;
+  }
+
+  .apartment-page__main-info {
+    margin-bottom: 70px;
+  }
+
+  .apartment-page__similar-text-box {
+    width: calc(100% / 3);
+  }
+
+  .apartment-page__similar-apartments {
+    margin-bottom: 70px;
+  }
+
+  .apartment-page__description {
+    margin-bottom: 70px;
+  }
+
+  .apartment-page__description-left-box {
+    width: calc(50% - 30px);
+    margin-right: 30px;
+  }
+
+  .apartment-page__description-btn-box {
+    margin-bottom: 25px;
+  }
+
+  .apartment-page__description-btn {
+    margin-top: 5px;
+  }
+
+  .apartment-page__mortgage-calculator-title {
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+
+  .apartments-page__banks-title {
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+
+  .apartment-page__calculator-range-box {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .apartment-page__checkbox-label {
+    width: 100%;
+  }
+
+  .apartment-page__checkbox-box {
+    flex-wrap: wrap;
+  }
+
+  .apartment-page__calculate-value {
+    margin-bottom: 30px;
+  }
+
+  .apartment-page__bank-cards-box {
+    grid-template-columns: 1fr;
+    grid-gap: 20px 20px;
+  }
+
+  .apartments-page__similar-title {
+    font-size: 20px;
+  }
+
+  .apartment-page__gallery-item {
+    padding: 20px;
+    height: 220px;
   }
 }
 
@@ -306,6 +448,80 @@
     &--active + .mortgage-link {
       bottom: 225px;
     }
+  }
+
+  .main-filter {
+    grid-template-columns: repeat(2, max-content);
+  }
+
+  .apartments-page__apartment {
+    width: calc(100% / 2);
+
+    &:nth-child(3n) {
+      border-right: 1px solid #DEDEDE;
+    }
+
+    &:nth-child(2n) {
+      border-right: none;
+    }
+  }
+
+  .apartment-page__main-info {
+    flex-wrap: wrap;
+  }
+
+  .apartment-page__gallery-box {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .apartment-page__spec-box {
+    width: 100%;
+  }
+
+  .apartment-page__similar-text-box {
+    width: calc(100% / 2);
+  }
+
+  .apartment-page__description-left-box {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .apartment-page__description-tabs {
+    width: 100%;
+  }
+
+  .apartment-page__mortgage-calculator {
+    flex-wrap: wrap;
+  }
+
+  .apartment-page__calculator-box {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .apartment-page__banks {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .apartments-page__banks-title {
+    font-size: 24px;
+  }
+
+  .apartment-page__mortgage-calculator-title {
+    font-size: 24px;
+  }
+
+  .apartment-page__bank-cards-box {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .apartment-page__description {
+    flex-wrap: wrap;
   }
 }
 
@@ -631,6 +847,55 @@
       }
     }
   }
+
+  .main-filter__sort-type {
+    margin-left: 0;
+    display: block;
+
+    &:first-of-type {
+      margin-left: 0;
+      margin-top: 8px;
+    }
+  }
+
+  .main-filter__sort-box {
+    padding: 13px 18px;
+  }
+
+  .apartment-page__gallery-item {
+    height: 200px;
+  }
+
+  .apartment-page__similar-text-box {
+    width: 100%;
+    border-right: none;
+  }
+
+  .apartment-page__main-info {
+    margin-bottom: 50px;
+  }
+
+  .apartment-page__similar-apartments {
+    margin-bottom: 50px;
+  }
+
+  .apartment-page__description {
+    margin-bottom: 50px;
+  }
+
+  .apartment-page__mortgage-calculator-title {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  .apartments-page__banks-title {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  .apartment-page__bank-cards-box {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -645,6 +910,23 @@
 
   .callback {
     width: calc(100% - 40px);
+  }
+
+  .main-filter {
+    grid-template-columns: repeat(1, max-content);
+  }
+
+  .apartments-page__apartment {
+    width: 100%;
+
+    &:nth-child(1n) {
+      border-right: none;
+    }
+  }
+
+  .apartment-page__advantage {
+    width: 100%;
+    margin-right: 0;
   }
 }
 

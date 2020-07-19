@@ -134,3 +134,18 @@
     }
   }
 }
+
+.footer__icon-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.footer__icon-url {
+  display: block;
+}
+
+.footer__icon {
+  display: block;
+}

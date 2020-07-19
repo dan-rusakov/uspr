@@ -180,6 +180,7 @@
   border-right: 1px solid #DEDEDE;
   text-decoration: none;
   outline: none;
+  position: relative;
 
   &:hover, &:focus {
     text-decoration: none;
@@ -270,4 +271,35 @@
   &--yellow {
     background-color: #FFF4CB;
   }
+}
+
+.apartments-page__apartment-advantage-text {
+  font-family: $open-sans;
+  font-weight: $semibold;
+  color: $dark;
+  margin: 0 0 9px;
+  font-size: 20px;
+
+  &--gray {
+    color: #A9A9A9;
+    font-size: 16px;
+  }
+
+  &:first-of-type {
+    margin-top: 23px;
+  }
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.apartment__apartment-advantage-description {
+  font-family: $open-sans;
+  font-weight: $semibold;
+  color: #a9a9a9;
+  margin: 0 0 3px;
+  font-size: 12px;
+  vertical-align: bottom;
+  display: inline-block;
 }
