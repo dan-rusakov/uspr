@@ -107,6 +107,7 @@
   height: 2px;
   background-color: #EBEBEB;
   margin: 20px 0.6em 24px;
+  width: 100%;
 
   div {
     background-color: #c4c4c4;
@@ -246,4 +247,21 @@
       opacity: 0.65;
     }
   }
+}
+
+.main-filter__slider-placeholder-box {
+  width: 100%;
+  margin-bottom: 7px;
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-filter__slider-placeholder {
+  font-family: $open-sans;
+  font-weight: $regular;
+  font-size: 14px;
+  color: $dark;
+  margin: 0;
 }

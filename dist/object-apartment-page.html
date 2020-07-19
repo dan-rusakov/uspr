@@ -235,12 +235,13 @@
 											<div class="apartment-page__calculator-range-box">
 												<input
 													type="range"
-													min="60000"
-													max="30000000"
+													min="1000000"
+													max="5000000"
 													class="apartment-page__calculator-range"
+													id="apartment-price"
 												>
-												<p class="apartment-page__calculator-range-number">60000</p>
-												<p class="apartment-page__calculator-range-number">300000000</p>
+												<p class="apartment-page__calculator-range-number">1000000</p>
+												<p class="apartment-page__calculator-range-number">5000000</p>
 											</div>
 										</div>
 										<div class="apartment-page__calculate-value">
@@ -254,12 +255,13 @@
 											<div class="apartment-page__calculator-range-box">
 												<input
 													type="range"
-													min="60000"
-													max="30000000"
+													min="500000"
+													max="3000000"
 													class="apartment-page__calculator-range"
+													id="first-installment"
 												>
-												<p class="apartment-page__calculator-range-number">60000</p>
-												<p class="apartment-page__calculator-range-number">300000000</p>
+												<p class="apartment-page__calculator-range-number">500000</p>
+												<p class="apartment-page__calculator-range-number">3000000</p>
 											</div>
 										</div>
 										<div class="apartment-page__calculate-value">
@@ -276,6 +278,7 @@
 													min="1"
 													max="30"
 													class="apartment-page__calculator-range"
+													id="mortgage-duration"
 												>
 												<p class="apartment-page__calculator-range-number">1</p>
 												<p class="apartment-page__calculator-range-number">30</p>
@@ -283,16 +286,17 @@
 										</div>
 										<div class="apartment-page__checkbox-box">
 											<label class="apartment-page__checkbox-label">
-												<input type="checkbox" class="apartment-page__checkbox-input visually-hidden ">
+												<input type="checkbox" class="apartment-page__checkbox-input visually-hidden" id="secondary-housing">
+												<div class="apartment-page__checkbox"></div>
+												<p class="apartment-page__checkbox-text">Вторичное жилье</p>
+											</label>
+											<label class="apartment-page__checkbox-label">
+												<input type="checkbox" class="apartment-page__checkbox-input visually-hidden" id="family-mortgage">
 												<div class="apartment-page__checkbox"></div>
 												<p class="apartment-page__checkbox-text">Семейная ипотека</p>
 											</label>
-											<label class="apartment-page__checkbox-label">
-												<input type="checkbox" class="apartment-page__checkbox-input visually-hidden ">
-												<div class="apartment-page__checkbox"></div>
-												<p class="apartment-page__checkbox-text">Есть материнский капитал</p>
-											</label>
 										</div>
+										<p class="apartment-page__checkbox-info-text" style="display: none;">Первоначальный взнос от 15%</p>
 									</div>
 								</div>
 								<div class="apartment-page__banks">
@@ -300,15 +304,45 @@
 									<div class="apartment-page__bank-cards-box">
 										<div class="apartment-page__bank-card">
 											<img src="img/vtb-icon.jpg" alt="" class="apartment-page__bank-img">
+											<div class="apartment-page__bank-description-wrap">
+												<div class="apartment-page__bank-description">
+													<p class="apartment-page__bank-description-title">Ставка</p>
+													<p class="apartment-page__bank-description-text" id="rate-vtb"></p>
+												</div>
+												<div class="apartment-page__bank-description">
+													<p class="apartment-page__bank-description-title">Ежемесячный платеж</p>
+													<p class="apartment-page__bank-description-text" id="payment-vtb"></p>
+												</div>
+											</div>
 										</div>
 										<div class="apartment-page__bank-card">
 											<img src="img/sber-icon.png" alt="" class="apartment-page__bank-img">
+											<div class="apartment-page__bank-description-wrap">
+												<div class="apartment-page__bank-description">
+													<p class="apartment-page__bank-description-title">Ставка</p>
+													<p class="apartment-page__bank-description-text" id="rate-sber"></p>
+												</div>
+												<div class="apartment-page__bank-description">
+													<p class="apartment-page__bank-description-title">Ежемесячный платеж</p>
+													<p class="apartment-page__bank-description-text" id="payment-sber"></p>
+												</div>
+											</div>
 										</div>
 										<div class="apartment-page__bank-card">
 											<img src="img/rosbank-icon.png" alt="" class="apartment-page__bank-img">
+											<div class="apartment-page__bank-description-wrap">
+												<div class="apartment-page__bank-description">
+													<p class="apartment-page__bank-description-title">Ставка</p>
+													<p class="apartment-page__bank-description-text" id="rate-rossel"></p>
+												</div>
+												<div class="apartment-page__bank-description">
+													<p class="apartment-page__bank-description-title">Ежемесячный платеж</p>
+													<p class="apartment-page__bank-description-text" id="payment-rossel"></p>
+												</div>
+											</div>
 										</div>
 									</div>
-									<a data-fancybox data-src="#book-popup" href="javascript:;" class="apartment-page__book-btn">Оформить ипотеку</a
+									<a data-fancybox data-src="#book-popup" href="javascript:;" class="apartment-page__book-btn">Оформить ипотеку</a>
 								</div>
 							</div>
 						</div>
@@ -446,7 +480,7 @@
 				</clipPath>
 			</defs>
 		</symbol>
-		<symbol id="icon-vk" viewBox="0 0 16 16"><path d="M8,0a8,8,0,1,0,8,8A8,8,0,0,0,8,0Zm4.58,11.51-1.4,0a1,1,0,0,1-.7-.21c-.52-.37-1-1.3-1.4-1.18s-.38,1-.38,1a.44.44,0,0,1-.09.27.5.5,0,0,1-.28.13H7.7a3.62,3.62,0,0,1-2.61-1.19,16.91,16.91,0,0,1-2.5-4.13s-.07-.18,0-.27a.5.5,0,0,1,.31-.1H4.4a.64.64,0,0,1,.24.09.45.45,0,0,1,.13.18,11.49,11.49,0,0,0,.57,1.17c.63,1.08.92,1.32,1.13,1.2s.22-1.53.22-1.53a1.55,1.55,0,0,0-.16-.71A.69.69,0,0,0,6.06,6c-.08,0,.06-.21.24-.29a3.35,3.35,0,0,1,1.31-.14,2.51,2.51,0,0,1,.74.08c.51.12.34.6.34,1.76,0,.37-.07.89.2,1.06.11.08.39,0,1.1-1.18A9,9,0,0,0,10.57,6a.5.5,0,0,1,.14-.17.34.34,0,0,1,.2,0h1.58s.48-.06.56.15-.18.75-.83,1.61c-1.06,1.42-1.17,1.28-.29,2.1a4.59,4.59,0,0,1,1,1.21C13.32,11.46,12.58,11.51,12.58,11.51Z" style="fill: #4d76a1"/></symbol>
+		<symbol id="icon-vk" viewBox="0 0 16 16"><path d="M8,0a8,8,0,1,0,8,8A8,8,0,0,0,8,0Zm4.58,11.51-1.4,0a1,1,0,0,1-.7-.22C10,11,9.46,10,9.07,10.14s-.38,1-.38,1a.41.41,0,0,1-.08.27.52.52,0,0,1-.29.13H7.69a3.61,3.61,0,0,1-2.6-1.19A17.08,17.08,0,0,1,2.58,6.19s-.07-.18,0-.27.31-.11.31-.11H4.4a.77.77,0,0,1,.24.1.5.5,0,0,1,.13.18,10.32,10.32,0,0,0,.56,1.17c.63,1.08.92,1.32,1.14,1.2s.21-1.53.21-1.53a1.48,1.48,0,0,0-.15-.71A.69.69,0,0,0,6.06,6c-.08,0,.05-.21.23-.29A3.35,3.35,0,0,1,7.6,5.54a3.1,3.1,0,0,1,.74.07c.52.13.34.61.34,1.77,0,.37-.06.89.2,1.06s.4,0,1.1-1.18A8.42,8.42,0,0,0,10.57,6a.39.39,0,0,1,.14-.17.38.38,0,0,1,.2,0h1.58S13,5.76,13,6s-.18.75-.82,1.61C11.16,9,11,8.86,11.92,9.68a4.59,4.59,0,0,1,1,1.21C13.31,11.46,12.58,11.51,12.58,11.51Z" style="fill: #4d76a1"/><path d="M12.58,11.51l-1.4,0a1,1,0,0,1-.7-.22C10,11,9.46,10,9.07,10.14s-.38,1-.38,1a.41.41,0,0,1-.08.27.52.52,0,0,1-.29.13H7.69a3.61,3.61,0,0,1-2.6-1.19A17.08,17.08,0,0,1,2.58,6.19s-.07-.18,0-.27.31-.11.31-.11H4.4a.77.77,0,0,1,.24.1.5.5,0,0,1,.13.18,10.32,10.32,0,0,0,.56,1.17c.63,1.08.92,1.32,1.14,1.2s.21-1.53.21-1.53a1.48,1.48,0,0,0-.15-.71A.69.69,0,0,0,6.06,6c-.08,0,.05-.21.23-.29A3.35,3.35,0,0,1,7.6,5.54a3.1,3.1,0,0,1,.74.07c.52.13.34.61.34,1.77,0,.37-.06.89.2,1.06s.4,0,1.1-1.18A8.42,8.42,0,0,0,10.57,6a.39.39,0,0,1,.14-.17.38.38,0,0,1,.2,0h1.58S13,5.76,13,6s-.18.75-.82,1.61C11.16,9,11,8.86,11.92,9.68a4.59,4.59,0,0,1,1,1.21C13.31,11.46,12.58,11.51,12.58,11.51Z" style="fill: #fff"/></symbol>
 	</defs>
 </svg>
 

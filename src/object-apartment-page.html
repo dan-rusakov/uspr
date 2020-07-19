@@ -235,12 +235,13 @@
 											<div class="apartment-page__calculator-range-box">
 												<input
 													type="range"
-													min="60000"
-													max="30000000"
+													min="1000000"
+													max="5000000"
 													class="apartment-page__calculator-range"
+													id="apartment-price"
 												>
-												<p class="apartment-page__calculator-range-number">60000</p>
-												<p class="apartment-page__calculator-range-number">300000000</p>
+												<p class="apartment-page__calculator-range-number">1000000</p>
+												<p class="apartment-page__calculator-range-number">5000000</p>
 											</div>
 										</div>
 										<div class="apartment-page__calculate-value">
@@ -254,12 +255,13 @@
 											<div class="apartment-page__calculator-range-box">
 												<input
 													type="range"
-													min="60000"
-													max="30000000"
+													min="500000"
+													max="3000000"
 													class="apartment-page__calculator-range"
+													id="first-installment"
 												>
-												<p class="apartment-page__calculator-range-number">60000</p>
-												<p class="apartment-page__calculator-range-number">300000000</p>
+												<p class="apartment-page__calculator-range-number">500000</p>
+												<p class="apartment-page__calculator-range-number">3000000</p>
 											</div>
 										</div>
 										<div class="apartment-page__calculate-value">
@@ -276,6 +278,7 @@
 													min="1"
 													max="30"
 													class="apartment-page__calculator-range"
+													id="mortgage-duration"
 												>
 												<p class="apartment-page__calculator-range-number">1</p>
 												<p class="apartment-page__calculator-range-number">30</p>
@@ -283,16 +286,17 @@
 										</div>
 										<div class="apartment-page__checkbox-box">
 											<label class="apartment-page__checkbox-label">
-												<input type="checkbox" class="apartment-page__checkbox-input visually-hidden ">
+												<input type="checkbox" class="apartment-page__checkbox-input visually-hidden" id="secondary-housing">
+												<div class="apartment-page__checkbox"></div>
+												<p class="apartment-page__checkbox-text">Вторичное жилье</p>
+											</label>
+											<label class="apartment-page__checkbox-label">
+												<input type="checkbox" class="apartment-page__checkbox-input visually-hidden" id="family-mortgage">
 												<div class="apartment-page__checkbox"></div>
 												<p class="apartment-page__checkbox-text">Семейная ипотека</p>
 											</label>
-											<label class="apartment-page__checkbox-label">
-												<input type="checkbox" class="apartment-page__checkbox-input visually-hidden ">
-												<div class="apartment-page__checkbox"></div>
-												<p class="apartment-page__checkbox-text">Есть материнский капитал</p>
-											</label>
 										</div>
+										<p class="apartment-page__checkbox-info-text" style="display: none;">Первоначальный взнос от 15%</p>
 									</div>
 								</div>
 								<div class="apartment-page__banks">
@@ -300,15 +304,45 @@
 									<div class="apartment-page__bank-cards-box">
 										<div class="apartment-page__bank-card">
 											<img src="img/vtb-icon.jpg" alt="" class="apartment-page__bank-img">
+											<div class="apartment-page__bank-description-wrap">
+												<div class="apartment-page__bank-description">
+													<p class="apartment-page__bank-description-title">Ставка</p>
+													<p class="apartment-page__bank-description-text" id="rate-vtb"></p>
+												</div>
+												<div class="apartment-page__bank-description">
+													<p class="apartment-page__bank-description-title">Ежемесячный платеж</p>
+													<p class="apartment-page__bank-description-text" id="payment-vtb"></p>
+												</div>
+											</div>
 										</div>
 										<div class="apartment-page__bank-card">
 											<img src="img/sber-icon.png" alt="" class="apartment-page__bank-img">
+											<div class="apartment-page__bank-description-wrap">
+												<div class="apartment-page__bank-description">
+													<p class="apartment-page__bank-description-title">Ставка</p>
+													<p class="apartment-page__bank-description-text" id="rate-sber"></p>
+												</div>
+												<div class="apartment-page__bank-description">
+													<p class="apartment-page__bank-description-title">Ежемесячный платеж</p>
+													<p class="apartment-page__bank-description-text" id="payment-sber"></p>
+												</div>
+											</div>
 										</div>
 										<div class="apartment-page__bank-card">
 											<img src="img/rosbank-icon.png" alt="" class="apartment-page__bank-img">
+											<div class="apartment-page__bank-description-wrap">
+												<div class="apartment-page__bank-description">
+													<p class="apartment-page__bank-description-title">Ставка</p>
+													<p class="apartment-page__bank-description-text" id="rate-rossel"></p>
+												</div>
+												<div class="apartment-page__bank-description">
+													<p class="apartment-page__bank-description-title">Ежемесячный платеж</p>
+													<p class="apartment-page__bank-description-text" id="payment-rossel"></p>
+												</div>
+											</div>
 										</div>
 									</div>
-									<a data-fancybox data-src="#book-popup" href="javascript:;" class="apartment-page__book-btn">Оформить ипотеку</a
+									<a data-fancybox data-src="#book-popup" href="javascript:;" class="apartment-page__book-btn">Оформить ипотеку</a>
 								</div>
 							</div>
 						</div>
