@@ -10,11 +10,12 @@ if (document.querySelector('.callback')){
   }
 
   callback.addEventListener('submit', function(evt){
-    evt.preventDefault();
+		evt.preventDefault();
+
     $.ajax({
       type: "POST",
       url: "assets/callback.php",
-      data: $(this).serialize()
+      data: $(this).serialize(),
     }).done(function() {
       $(this).find("input").val("");
       $(".callback").trigger("reset");
